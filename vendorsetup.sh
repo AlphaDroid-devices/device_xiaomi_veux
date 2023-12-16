@@ -1,19 +1,19 @@
-echo 'Starting to clone stuffs needed for your device'
+echo "Cloning required stuffs..."
 
-echo 'Cloning Vendor tree [1/4]'
-# Vendor Tree
-git clone https://gitlab.com/JaswalAshish/vendor_xiaomi_veux vendor/xiaomi/veux
+echo "Cloning kernel..."
+# Kernal
+git clone https://github.com/aswinop/kernel_xiaomi_sm6375.git kernel/xiaomi/sm6375 --depth=1
 
-echo 'Cloning Firmware tree [2/4]'
+echo "Cloning Firmware tree..."
 # Firmware Tree
-git clone https://gitlab.com/JaswalAshish/vendor_xiaomi_veux-firmware.git vendor/xiaomi/veux-firmware
+git clone https://gitlab.com/aswinop/vendor_xiaomi_veux-firmware.git vendor/xiaomi/veux-firmware
 
-echo 'Cloning Kernel tree [3/4]'
-# Kernel Tree
-git clone --depth=1 https://github.com/crdroidandroid/android_kernel_oneplus_sm8350 kernel/xiaomi/sm6375
+echo "Cloning Vendor..."
+# Vendor
+git clone https://gitlab.com/aswinop/vendor_xiaomi_veux vendor/xiaomi/veux
 
-echo 'Cloning Prebuilt Kernel tree [4/4]'
-# Prebuilt Kernel Tree
-git clone https://github.com/JaswalAshish/device_xiaomi_veux-kernel.git device/xiaomi/veux-kernel
+echo "Cloning hardware related stuff..."
+# Hardware
+git clone https://github.com/Evolution-X/hardware_xiaomi hardware/xiaomi
 
-echo 'Completed, proceeding to lunch'
+echo "Completed, proceeding to lunch"
