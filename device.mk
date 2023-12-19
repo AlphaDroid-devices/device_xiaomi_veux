@@ -133,10 +133,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
-# Camera
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V4
-
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
@@ -145,7 +141,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
-    libstdc++.vendor \
     libpiex_shim
 
 # Consumer IR
@@ -265,10 +260,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# IFAA Manager
-PRODUCT_PACKAGES += \
-    IFAAService
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -286,8 +277,7 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
-    vendor.qti.media.c2@1.0-service
-
+    
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
@@ -303,8 +293,6 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -317,8 +305,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
     vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0.vendor \
     Tag \
     NfcNci \
     SecureElement \
@@ -333,11 +319,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxVidcCommon \
     libstagefrighthw \
-    libstagefrighthw.vendor \
     libstagefright_omx \
     libstagefright_foundation \
     libstagefright_softomx.vendor
@@ -371,10 +353,6 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -517,11 +495,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
-
-# Spatial Audio
-PRODUCT_PACKAGES += \
-    frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml
-
+    
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
