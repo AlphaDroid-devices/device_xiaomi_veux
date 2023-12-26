@@ -28,6 +28,9 @@ ro.lmk.swap_util_max=100
 # Cutout
 ro.support_hide_display_cutout=true
 
+# Declare use of spatial audio
+ro.audio.spatializer_enabled=true
+
 # Phantom process monitoring
 persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
