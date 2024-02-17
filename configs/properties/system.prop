@@ -27,6 +27,10 @@ debug.hwui.skia_atrace_enabled=false
 # FEAS
 ro.feas.enable=true
 
+# Fling velocities
+ro.min.fling_velocity=70
+ro.max.fling_velocity=21000
+
 # FS-verity
 ro.apk_verity.mode=2
 
